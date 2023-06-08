@@ -54,7 +54,7 @@ function loop() {
     if (snake.cells.length > snake.maxCells) {
         snake.cells.pop();
     }
-    context.fillStyle = 'red';
+    context.fillStyle = 'blueviolet';
     context.fillRect(apple.x, apple.y, grid - 1, grid - 1);
     context.fillStyle = 'green';
     snake.cells.forEach(function (cell, index) {
