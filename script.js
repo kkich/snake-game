@@ -25,6 +25,10 @@ var apple = {
 };
 var score = 0;
 
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
 function loop() {
     requestAnimationFrame(loop);
     if (++count < delay / 4) {
